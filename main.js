@@ -34,7 +34,7 @@ var app = http.createServer(function(request,response){
       db.query(`SELECT * FROM TOPIC`, function(err, topics){
         console.log(topics);
             response.writeHead(200);
-            response.end('success');
+            response.end('Success');
       });
       } else {
         fs.readdir('./data', function(error, filelist){
